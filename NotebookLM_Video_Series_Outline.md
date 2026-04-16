@@ -15,7 +15,7 @@ This file **does not replace** `Hell's Paradise's Historical Context.md`. Use it
 
 **Tip:** Treat **Glossary** (especially the **cross-reference index**) and **References** as a **bonus episode** or appendix cards—not the main narrative.
 
-**What changed vs older outlines:** the parent doc now includes **Traditional Chinese + Japanese** glosses, **Kotaku’s three rings** (瀛州 / 方丈 / 蓬莱), **道士**, **§3a talismans** (**太上老君急急如律令**), a full **易經 / 周易 / 十翼** divination block, **Tensen honorific titles**, **Appendix D** (Hong Kong epilogue **雙龍過江** / **雙龍之道**), and an expanded **Appendix C** (**Banko** / **盤古**). Episode numbers below match those additions.
+**What changed vs older outlines:** the parent doc now includes **Traditional Chinese + Japanese** glosses, **Kotaku’s three rings** (瀛州 / 方丈 / 蓬莱), **道士**, **§3a talismans** (**太上老君急急如律令**), a full **易經 / 周易 / 十翼** divination block, **Tensen honorific titles**, **Appendix D** (Hong Kong epilogue **雙龍過江** / **雙龍之道**), an expanded **Appendix C** (**Banko** / **盤古** + Taoist **元始天王** note), and **Appendix E** (**辟餌服生の斎** vs **服餌辟穀**—optional character-play echo, **not** author-confirmed). Episode numbers below match those additions.
 
 ---
 
@@ -66,14 +66,14 @@ SERIES CONTINUITY — DO NOT REPEAT EARLIER EPISODES:
 | 13 | Kishikai vs corpse liberation; real Chinese “five methods” sources | 8–12 min |
 | 14 | External alchemy rituals vs the manga’s “factory island” (incl. **符** in the chamber) | 8–14 min |
 | 15 | Internal alchemy, tanden, zhoutian, and wuxia tropes | 10–16 min |
-| 16 | Conclusion, **Appendices A–D**, references, and where to read next | 10–16 min |
+| 16 | Conclusion, **Appendices A–E**, references, and where to read next | 10–16 min |
 | **17 (opt.)** | **Glossary sprint** (incl. EN · 繁 · JP cross-reference rows) | shorts / flashcards |
 
 ---
 
 ## 01 — Viewer orientation: *Hell’s Paradise*, China, and how this doc works
 
-**Source span:** Title block, **“For English readers”** callout, first long paragraph of the introduction (through “twisted into suffering…”), and the **compile paragraph** that lists what the full document covers (through **Appendix D** / **§3a** / glossary mention—stop before `### 1.`).
+**Source span:** Title block, **“For English readers”** callout, first long paragraph of the introduction (through “twisted into suffering…”), and the **compile paragraph** that lists what the full document covers (through **Appendix E** / **§3a** / glossary mention—stop before `### 1.`).
 
 **Goal:** A self-contained **trailer-level** explanation: what the series is, why **Qin China** and **Taoist immortality lore** matter, what **Kotaku / Shinsenkyō** evokes, and how **English + Traditional Chinese + Cantonese *Jyutping* + Japanese** (manga spellings, [official glossary](https://www.jigokuraku.com/glossary/)) appear in the parent document—**without** diving into Xu Fu yet.
 
@@ -87,7 +87,7 @@ Structure:
 2) Plain English: who the First Emperor of Qin was in one line; who Xu Fu is in one line (no detail yet).
 3) Explain “islands of the immortals” and why Shinsenkyō / Kotaku mirrors Penglai-style paradise myth—then the doc’s theme: paradise twisted by obsession.
 4) Explain the document’s reading convention: English first, then **Traditional Chinese (繁體)** characters, then Cantonese Jyutping in italics; add Japanese where the manga uses it (e.g. 天仙 *tensen*, タオ, こたく).
-5) One line: the written doc also covers **talismans**, **Change**-style divination, and a **Hong Kong epilogue** title card—episodes later unpack each layer.
+5) One line: the written doc also covers **talismans**, **Change**-style divination, **appendices** (A–E: e.g. Hong Kong epilogue, optional **辟餌服生の斎** / **服餌辟穀** echo)—episodes later unpack each layer.
 6) End with: “The next episodes unpack history, cosmology, alchemy, and how the story rewrites each layer.”
 
 Tone: calm, curious, non-judgmental. Avoid spoiling plot beats beyond “immortality quest goes wrong.” Visuals: abstract maps, waves, island silhouettes, old brush textures—no copyrighted character art unless the user supplies it.
@@ -319,6 +319,7 @@ Structure:
 3) Manga Tao: five elements + yin-yang; overlap with qi but distinct term in-story (タオ vs 道).
 4) Five training methods named once with “these are real historical hygiene / meditation clusters.”
 5) Feng shui + kan yu: wind-water, dragon veins, site qi—then island as “geomantic engine” in the plot.
+Optional one-liner (no deep dive): the official glossary rite **辟餌服生の斎** (five-element qi for 徐福)—full **optional echo** of **服餌辟穀** is **Appendix E** in the parent doc; Episode **16** summarizes it.
 
 Tone: fan-friendly but accurate; label Japanese katakana “Tao” vs Chinese 道 on screen once. No sexual detail beyond naming fangzhongshu as “bedchamber arts” in historical context.
 ```
@@ -412,11 +413,11 @@ Optional one-line hook: tanden damage/regrowth can justify long in-story time sk
 
 ---
 
-## 16 — Themes, **Appendices A–D**, and reading next
+## 16 — Themes, **Appendices A–E**, and reading next
 
-**Source span:** `### Conclusion…`, `## Appendices` (**A**, **B**, **C**, **D**), `## References…` (including **Anqi Sheng** and primary texts bullets)—**skip** the full **Glossary** tables unless you want a rapid-fire “definitions” coda (then use optional **17**).
+**Source span:** `### Conclusion…`, `## Appendices` (**A**, **B**, **C**, **D**, **E**), `## References…` (including **Anqi Sheng** and primary texts bullets)—**skip** the full **Glossary** tables unless you want a rapid-fire “definitions” coda (then use optional **17**).
 
-**Goal:** **Synthesis + citations** episode: moral thesis; **Kishikai** recap; **Eight Immortals** as interpretive; **Banko / 盤古**; **Hong Kong epilogue** (**雙龍過江** / **雙龍之道**, British Hong Kong tripod, **Ju Fa / Gui Fa**, English “WAY OF THE TWINS” vs Chinese **雙龍**); Watson / Needham pointers.
+**Goal:** **Synthesis + citations** episode: moral thesis; **Kishikai** recap; **Eight Immortals** as interpretive; **Banko / 盤古**; **Hong Kong epilogue** (**雙龍過江** / **雙龍之道**, British Hong Kong tripod, **Ju Fa / Gui Fa**, English “WAY OF THE TWINS” vs Chinese **雙龍**); **Appendix E** (**辟餌服生の斎** vs **服餌辟穀**—optional echo, **weak** semantic link, **no** official glossary confirmation); Watson / Needham pointers.
 
 ### Video prompt
 
@@ -431,6 +432,7 @@ Include:
 - Appendix B: “Eight Immortals” fan comparisons vs authorial evidence—stay cautious.
 - Appendix C: Banko vs mythic Pangu (盤古)—thematic rhyme, not a Taoist Canon footnote.
 - Appendix D: epilogue in British-occupied Hong Kong; 雙龍過江 idiom; 雙龍之道 vs English “THE WAY OF THE TWINS”; three-way power sketch (British / triads / Qing agents) as atmosphere not documentary transcript; optional: century-scale regrowth justifying the time jump.
+- Appendix E (short): official **辟餌服生の斎** definition from *Jigokuraku* glossary (five-element qi for 徐福); then **hypothesis only**—graph overlap with **服餌辟穀** (辟穀 + medicinals per zh.wikipedia 辟穀 article); contrast self-cultivation vs manga predation; label as reader-side, not verified intertext.
 - “Where to read next”: *Records of the Grand Historian* (Watson), *Dao De Jing*, *Book of Changes* + Ten Wings, *Baopuzi*, Needham as dense orientation.
 
 Tone: reflective. Visuals: slower pacing, quote cards with proper nouns + characters. Invite viewers to read the full written doc for glossary + EN/繁/JP cross-reference.
@@ -458,5 +460,5 @@ No storytelling—just crisp definitions. Voice: neutral narrator. On-screen tex
 
 - If you **edit headings** in `Hell's Paradise's Historical Context.md`, update the **Source span** lines in this outline to match.
 - To **stop Xu Fu loops**, upload excerpts that **cut `### 1.`** (voyages) for Episodes **06–16**; keep a single line: “Xu Fu / Qin expeditions: Episode 02.”
-- New major headings since older versions of this file: **`### 3a.`**, **`#### **易經**` (under §4)**, **`### Appendix D`**, expanded intro **compile** paragraph, **Glossary cross-reference index**.
+- New major headings since older versions of this file: **`### 3a.`**, **`#### **易經**` (under §4)**, **`### Appendix D`**, **`### Appendix E`** (**辟餌服生の斎** / **服餌辟穀**), expanded intro **compile** paragraph, **Glossary cross-reference index**.
 - For strict NotebookLM isolation, consider saving **per-episode excerpts** as separate `.md` files and uploading **only one excerpt + this prompt** per generation.
