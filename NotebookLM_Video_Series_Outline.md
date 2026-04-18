@@ -7,15 +7,17 @@ This file **does not replace** `Hell's Paradise's Historical Context.md`. Use it
 1. **Upload** `Hell's Paradise's Historical Context.md` as your primary source (or keep it in the same notebook).
 2. **Add this outline** as a second source so the model knows your intended **episode boundaries**.
 3. For each video below, start a **new chat** or **new generation** and paste:
-   - the **Video prompt** (bottom of each section), and optionally
+   - the **Video prompt** (one fenced block per episode: main instructions, then **MANGA / ANIME ANCHORS**, then **SERIES CONTINUITY** where that footer applies), and optionally
    - “**Limit scope to:**” + the **Source span** line so the model does not pull the whole glossary every time.
 4. If the tool still drifts too wide, **duplicate** the main doc into smaller files by copying only the listed headings into `Part-01-….md`, etc., and upload **one part per notebook** for stricter isolation.
-5. **Continuity:** Generators often **re-open** with a long block on **秦始皇** and **徐福東渡** even when the episode is about talismans or the *Changes*. From **Episode 03 onward**, paste the **Series continuity footer** (in [Continuity: avoid repeating earlier episodes](#continuity-avoid-repeating-earlier-episodes)) **below** each video prompt—or put that footer in a **pinned / custom instruction** if your tool supports it.
+5. **Continuity:** Generators often **re-open** with a long block on **秦始皇** and **徐福東渡** even when the episode is about talismans or the *Changes*. **Episodes 04–17 (incl. optional 17):** the **Series continuity footer** is **inside** each **Video prompt**—paste the **entire** fenced block. For **Episode 03** or ad hoc use, copy the standalone footer in [Continuity: avoid repeating earlier episodes](#continuity-avoid-repeating-earlier-episodes).
 6. If repetition persists, upload an excerpt that **omits** `### 1.` (Xu Fu voyages) for later episodes, and add one hand-written line: “Xu Fu expeditions: see Episode 02 only.”
 
 **Tip:** Treat **Glossary** (especially the **cross-reference index**) and **References** as a **bonus episode** or appendix cards—not the main narrative.
 
-**What changed vs older outlines:** the parent doc now includes **Traditional Chinese + Japanese** glosses, **Kotaku’s three rings** (瀛州 / 方丈 / 蓬莱), **道士**, **§3a talismans** (**太上老君急急如律令**), a full **易經 / 周易 / 十翼** divination block, **Tensen honorific titles**, **Appendix D** (Hong Kong epilogue **雙龍過江** / **雙龍之道**), an expanded **Appendix C** (**Banko** / **盤古** + Taoist **元始天王** note), and **Appendix E** (**辟餌服生の斎** vs **服餌辟穀**—optional character-play echo, **not** author-confirmed). Episode numbers below match those additions.
+**Episodes 01–03 (already produced):** The **Source span** and **Goal** are unchanged; each **Video prompt** is one **fenced block** that now includes **Manga tie-in** inside it (single copy-paste). **Optionally** add the standalone **Series continuity footer** from [Continuity](#continuity-avoid-repeating-earlier-episodes) when regenerating **Episode 03** only. **Episodes 04–17:** Each **Video prompt** is one **fenced block**: **main instructions → Manga tie-in → Series continuity footer** (single copy-paste).
+
+**What changed vs older outlines:** the parent doc now includes **Traditional Chinese + Japanese** glosses, **Kotaku’s three rings** (瀛州 / 方丈 / 蓬莱), **道士**, **§3a talismans** (**太上老君急急如律令**), a full **易經 / 周易 / 十翼** divination block, **Tensen honorific titles**, **Appendix D** (Hong Kong epilogue **雙龍過江** / **雙龍之道**), an expanded **Appendix C** (**Banko** / **盤古** + Taoist **元始天王** note), and **Appendix E** (**辟餌服生の斎** vs **服餌辟穀**—optional character-play echo, **not** author-confirmed). Episode numbers below match those additions. **Episodes 01–17:** **Manga tie-in** and (for **04–17**) **Series continuity** are **inside** the same **Video prompt** fence—no separate **Manga tie-in** section below each episode.
 
 ---
 
@@ -33,9 +35,9 @@ NotebookLM and similar tools often **default to a “textbook opening”**: unif
 | Cinnabar, mercury, poisoning, **tomb** archaeology, Terracotta parallel | **05** | May name the emperor **only** as needed for poison/tomb; **no** second full “Sima Qian expedition” block |
 | Taiji / *Changes* / Five Phases / talismans / neidan / appendices | **08–16**, **07** | Treat Qin–Xu Fu as **already taught** unless one clause ties this beat to the island |
 
-### Series continuity footer (paste under Video prompts from **03** onward)
+### Series continuity footer (reference — **embedded in Episodes 04–17** prompts)
 
-Copy everything inside the fence and append it to the bottom of each episode’s prompt (or use as a notebook-wide custom instruction):
+The following is **duplicated inside** each **Episode 04–17** (including **optional 17**) `Video prompt` so you can **copy-paste one block** with **manga anchors** already included. Use this standalone version only for **Episode 03** or **custom instructions**:
 
 ```text
 SERIES CONTINUITY — DO NOT REPEAT EARLIER EPISODES:
@@ -91,6 +93,14 @@ Structure:
 6) End with: “The next episodes unpack history, cosmology, alchemy, and how the story rewrites each layer.”
 
 Tone: calm, curious, non-judgmental. Avoid spoiling plot beats beyond “immortality quest goes wrong.” Visuals: abstract maps, waves, island silhouettes, old brush textures—no copyrighted character art unless the user supplies it.
+
+---
+MANGA / ANIME ANCHORS:
+- **Frequency:** At least **every 90–120 seconds**, explicitly tie the doc’s history/Taoism setup to *Hell’s Paradise* / *Jigokuraku*—by **scene type**, **character**, or **[official glossary](https://www.jigokuraku.com/glossary/)** entry name (Japanese ok).
+- **Where the story introduces the premise (name these beats):** Opening **death-row / execution** context and **幕府** mission to find **仙薬**; **神仙郷** *Shinsenkyō* and **こたく** *Kotaku* as the island names viewers hear; **画眉丸** and **山田浅右衛門 佐切** as the pair who carry the “China + Tao” vocabulary into the plot; title **地獄楽** as the frame (“paradise” vs “hell”).
+- **Dive prompts:** When you mention **Penglai-style** isles, say how the **manga** labels them (**瀛州 / 方丈 / 蓬莱** in materials; JP readings **Eishū, Hōjō, Hōrai** from the glossary)—even if Episode 01 only **teases** rings, name them so viewers connect to later episodes.
+- **Avoid:** Inventing **chapter numbers** unless you verify them; prefer **“early episodes,” “briefing scenes,” “landing arc.”**
+- **On-screen text:** When a term appears, show **manga-style spellings** once: e.g. **天仙** *tensen*, **タオ**, **こたく**—then return to the doc’s 繁體 + *Jyutping* convention.
 ```
 
 ---
@@ -114,6 +124,13 @@ Cover in order:
 - Close with “unsolved mystery bridging fact and legend.”
 
 Use maps and ships as generic visuals; label proper nouns on screen with Chinese characters + Jyutping once each. No gore.
+
+---
+MANGA / ANIME ANCHORS:
+- **Frequency:** Each major history beat (expedition, islands, Sima Qian) should include **one line** on how *Jigokuraku* **reuses or inverts** it—via **徐福** / **Jofuku**, **蓮** *Rien*, or **island lore** in dialogue/flashback.
+- **Where the manga names Xu Fu / the quest:** Cite **official glossary** **[徐福](https://www.jigokuraku.com/glossary/)** (Japanese text); note that the work treats him as the **historical catalyst** who reached the island **before** the main plot. When you name **Penglai, Fangzhang, Yingzhou**, connect to **in-story** echoes (**蓬莱 / 方丈 / 瀛** naming) as **preview** of Episode 03’s ring structure—without repeating 03’s full table.
+- **Dive prompts:** Contrast **《史記》/ Sima Qian** as **real historiography** with **what characters believe** in-world (immortals, **仙薬**); optional one beat on **岩隠れ** / Gabimaru’s village rumor of **不死** tying the **Qin immortality obsession** to **Japanese** plot.
+- **Avoid** fabricating **panel citations**; say **“flashback,” “exposition,” “glossary wording”** when sourcing manga-side claims.
 ```
 
 ---
@@ -139,6 +156,13 @@ Explain:
 - Penglai myth cluster: eternal life, peaches, immortals—then the manga inversion: artificial Tensen, Tan as harvested life-force, island as corrupted paradise.
 
 Tone: analytical, respectful to religious history; clear “fiction vs history” signposting every 60–90 seconds. Visuals: cauldrons, cinnabar red, island mist turning sinister (stylized, not violent).
+
+---
+MANGA / ANIME ANCHORS:
+- **Frequency:** **Every subsection** (fangshi/waidan, three rings, 道士, Tan inversion) must open or close with a **manga-native** pointer: **[official glossary](https://www.jigokuraku.com/glossary/)** Japanese headword, **romanized island band** (Eishū / Hōjō / Hōrai), or **plot mechanism** (Flower Tao, **丹** *tan*, Tensen).
+- **Where this lives in the story:** **Landing on Kotaku** through **Hōrai**-ward travel; **道士** rank ladder and **天仙** *tensen* as **fiction-specific** hierarchy; **蓮** *Rien* / **徐福** backstory as the **“Xu Fu catalyst”** paragraph in the parent doc—say explicitly that viewers meet these **after** the Edo setup (Episode 01) and **alongside** island exploration (not only history lectures).
+- **Dive prompts:** Walk through the **three nested regions** table **with glossary readings**: **瀛州** *Eishū*, **方丈** *Hōjō*, **蓬莱** *Hōrai*—and **one sentence each** on **what lives there** (門神, 竈神, **Lord Tensen**) per glossary blurbs. For **waidan → Tan**, name **外丹花** / arborification as the **manga’s** “factory” mirror.
+- **Optional precision:** If the tool allows, add **“Compare: parent doc §1 table vs glossary 瀛州/方丈/蓬莱 entries”** so the script does not drift from **authorized** spellings.
 ```
 
 ---
@@ -162,6 +186,20 @@ Sections:
 3) Pivot to *Hell’s Paradise*: Lord Tensen as “heavenly immortals” / mountain immortals (仙人) and Japanese 天仙 *tensen*; why “adeptus” is a fair gloss; powers listed briefly (regeneration, elements, yin-yang switching).
 
 Avoid deep cosmology here—that is the next block of episodes. On-screen: simple diagram yin/yang split once. Characters + Jyutping for 道家, 道教, 方士, 天仙.
+
+---
+MANGA / ANIME ANCHORS:
+- **Glossary:** [天仙](https://www.jigokuraku.com/glossary/) *tensen*, **道士** *dōshi*, **氣** *ki*; tie **Lord Tensen** to **仙人** / *sennin* language the cast uses.
+- **Where in the story:** Island **rulers** introduced as **天仙**; disciples as **道士**; contrast **道家 / 道教** doc labels with **what characters call each other** (e.g. Tensen as “immortals”).
+- **Dive:** For each of **philosophical vs religious** Taoism, give **one manga-side example** (e.g. Flower Tao / training as “religious” layer; “Way” talk as philosophical echo)—without long plot recap.
+- **Frequency:** At least **three** explicit **glossary or on-screen term** callbacks (Japanese/繁體) in the episode.
+
+---
+SERIES CONTINUITY — DO NOT REPEAT EARLIER EPISODES:
+- Do **not** retell the biography of **秦始皇 (Qin Shi Huang)** or the **two 徐福 (Xu Fu) expeditions** (Sima Qian, fleets, youths sent east, sea monsters, Langya)—**Episode 02** already covered that; **Episode 01** only teased it in one line each.
+- **Maximum** for any of the above: **one short sentence** of recap or “as we established…” then proceed **only** with this episode’s topic.
+- If the source text still contains long Xu Fu paragraphs, **do not narrate them**; treat them as reference the audience already watched.
+- Open **in medias res** with this episode’s first required bullet, not a general “In ancient China…” history lesson unless this episode is **01**, **02**, or **05** (tomb/poison context only).
 ```
 
 ---
@@ -187,6 +225,20 @@ Outline:
 - Closing: Terracotta Army as a different kind of “immortality” (political legacy).
 
 Use labeled diagrams (Hg symbol), cross-section schematic of tomb—not literal excavation footage unless licensed. Neutral, educational.
+
+---
+MANGA / ANIME ANCHORS:
+- **Parallel beat:** When discussing **mercury / elixir poisoning**, name **丹** *tan* and **仙薬** *sen'yaku* from the [glossary](https://www.jigokuraku.com/glossary/) as the **story’s** “elixir” mirror—**dark inversion** of historical pills.
+- **Where in the story:** Characters link **immortality** to the **island** and **Xu Fu** lore; **do not** re-narrate island arcs—**one clause** max tying tomb **irony** (“seeking life, taking poison”) to **Tan** harvesting theme.
+- **Dive:** Optional single line on **岩隠れ** chief **immortality rumor** vs **archaeological** mercury (fact vs in-world gossip).
+- **Frequency:** **Two** glossary or manga vocabulary touches plus the **historical** core.
+
+---
+SERIES CONTINUITY — DO NOT REPEAT EARLIER EPISODES:
+- Do **not** retell the biography of **秦始皇 (Qin Shi Huang)** or the **two 徐福 (Xu Fu) expeditions** (Sima Qian, fleets, youths sent east, sea monsters, Langya)—**Episode 02** already covered that; **Episode 01** only teased it in one line each.
+- **Maximum** for any of the above: **one short sentence** of recap or “as we established…” then proceed **only** with this episode’s topic.
+- If the source text still contains long Xu Fu paragraphs, **do not narrate them**; treat them as reference the audience already watched.
+- Open **in medias res** with this episode’s first required bullet, not a general “In ancient China…” history lesson unless this episode is **01**, **02**, or **05** (tomb/poison context only).
 ```
 
 ---
@@ -209,6 +261,19 @@ Cover:
 - Last beat: why the manga’s “Tao (タオ)” can mix philosophical language with battle-shōnen cultivation tropes—creative fusion, not a quote from the *Dao De Jing*.
 
 Visuals: ink wash abstraction, turning pages (generic), yin-yang symbol once. Tone: precise, not preachy.
+
+---
+MANGA / ANIME ANCHORS:
+- **Glossary / story:** Contrast classical **道** with in-story **タオ** (power system); mention **太上老君** where the doc ties **Lord Lao** to **符** and later **§3a** (preview **Episode 07**).
+- **Where in the story:** Battle dialogue and training use **“Tao”** in a **shōnen** sense—quote **that** fusion, not the *Dao De Jing* as if it were a spellbook.
+- **Dive:** One beat on **Japanese** katakana **タオ** vs Chinese **道** on **official** materials / tankōbon glosses.
+
+---
+SERIES CONTINUITY — DO NOT REPEAT EARLIER EPISODES:
+- Do **not** retell the biography of **秦始皇 (Qin Shi Huang)** or the **two 徐福 (Xu Fu) expeditions** (Sima Qian, fleets, youths sent east, sea monsters, Langya)—**Episode 02** already covered that; **Episode 01** only teased it in one line each.
+- **Maximum** for any of the above: **one short sentence** of recap or “as we established…” then proceed **only** with this episode’s topic.
+- If the source text still contains long Xu Fu paragraphs, **do not narrate them**; treat them as reference the audience already watched.
+- Open **in medias res** with this episode’s first required bullet, not a general “In ancient China…” history lesson unless this episode is **01**, **02**, or **05** (tomb/poison context only).
 ```
 
 ---
@@ -232,6 +297,20 @@ Cover:
 - One sentence: talismans also bound elixir chambers in historical waidan (cross-ref §14 / §7).
 
 Tone: respectful; clear fiction vs religious history. If using the doc’s Wikimedia charm image, keep the file credit on screen.
+
+---
+MANGA / ANIME ANCHORS:
+- **Glossary:** [明目法](https://www.jigokuraku.com/glossary/) *Meimoku-hō*, **靈符** / **霊符** *reifu*; **符** as medium for **divination** in-fiction.
+- **Where in the story:** Any **spirit-talisman / fortune** scene—describe **when** the work shows **札** or **霊符** (no fabricated chapter numbers; say “island arc,” “Hōrai infiltration,” etc.).
+- **Dive:** Parent doc **§3a** + **急急如律令** / **太上老君** string—tie to **on-screen** charm geometry if the user supplies **fair-use** stills; otherwise stay descriptive.
+- **Cross-episode:** Point to **§7 / Episode 14** for **符** bounding **elixir** chambers.
+
+---
+SERIES CONTINUITY — DO NOT REPEAT EARLIER EPISODES:
+- Do **not** retell the biography of **秦始皇 (Qin Shi Huang)** or the **two 徐福 (Xu Fu) expeditions** (Sima Qian, fleets, youths sent east, sea monsters, Langya)—**Episode 02** already covered that; **Episode 01** only teased it in one line each.
+- **Maximum** for any of the above: **one short sentence** of recap or “as we established…” then proceed **only** with this episode’s topic.
+- If the source text still contains long Xu Fu paragraphs, **do not narrate them**; treat them as reference the audience already watched.
+- Open **in medias res** with this episode’s first required bullet, not a general “In ancient China…” history lesson unless this episode is **01**, **02**, or **05** (tomb/poison context only).
 ```
 
 ---
@@ -254,6 +333,19 @@ Include:
 - Close: how Tensen elemental yin-yang logic sits in this correlative world-picture.
 
 Use animated compass trigram. Next episode handles 易經 wings and casting. Pace slowly; repeat “Taiji → two → four → eight” once on screen.
+
+---
+MANGA / ANIME ANCHORS:
+- **Story hook:** **Tensen** **yin–yang** switching and **elemental Tao**—map to **Taiji → 兩儀** logic from the doc’s **§4** (no need to name every fight).
+- **Where in the story:** Call out **陰陽** *on’yō* / **陰陽** as read in materials when **powers** clash; optional **八卦** imagery if it appears in **official art** or **chapter title cards** (describe, don’t claim a specific vol. unless verified).
+- **Dive:** **Zhang Sanfeng** note stays **historical debunk**—one line only that **太極拳** is **not** the manga’s power system.
+
+---
+SERIES CONTINUITY — DO NOT REPEAT EARLIER EPISODES:
+- Do **not** retell the biography of **秦始皇 (Qin Shi Huang)** or the **two 徐福 (Xu Fu) expeditions** (Sima Qian, fleets, youths sent east, sea monsters, Langya)—**Episode 02** already covered that; **Episode 01** only teased it in one line each.
+- **Maximum** for any of the above: **one short sentence** of recap or “as we established…” then proceed **only** with this episode’s topic.
+- If the source text still contains long Xu Fu paragraphs, **do not narrate them**; treat them as reference the audience already watched.
+- Open **in medias res** with this episode’s first required bullet, not a general “In ancient China…” history lesson unless this episode is **01**, **02**, or **05** (tomb/poison context only).
 ```
 
 ---
@@ -277,6 +369,19 @@ Sections:
 5) One beat: *Hell’s Paradise* gestures at this stack when it uses Change-style divination language.
 
 Visuals: hexagram lines animating, generic coins, no copyrighted manga panels unless supplied.
+
+---
+MANGA / ANIME ANCHORS:
+- **Glossary:** Link **明目法** again to **卦**-style **fate** reading; **易經** *Ekikyō* as the **cultural package** the story **gestures** at.
+- **Where in the story:** Narration or visuals that sound like **divination** / **oracle** language—tie to **周易** + **十翼** stack **once** with a concrete **in-story** example (e.g. “reading” conditions, omens).
+- **Dive:** **連山 / 歸藏** as **lost books** parallel **in-fiction lost techniques**—**one sentence**, no new lore invention.
+
+---
+SERIES CONTINUITY — DO NOT REPEAT EARLIER EPISODES:
+- Do **not** retell the biography of **秦始皇 (Qin Shi Huang)** or the **two 徐福 (Xu Fu) expeditions** (Sima Qian, fleets, youths sent east, sea monsters, Langya)—**Episode 02** already covered that; **Episode 01** only teased it in one line each.
+- **Maximum** for any of the above: **one short sentence** of recap or “as we established…” then proceed **only** with this episode’s topic.
+- If the source text still contains long Xu Fu paragraphs, **do not narrate them**; treat them as reference the audience already watched.
+- Open **in medias res** with this episode’s first required bullet, not a general “In ancient China…” history lesson unless this episode is **01**, **02**, or **05** (tomb/poison context only).
 ```
 
 ---
@@ -298,6 +403,19 @@ Include:
 - Rotate five-phase ring (generic diagram).
 
 Assume viewers may have watched the previous episode on Change divination—do not repeat Ten Wings detail here.
+
+---
+MANGA / ANIME ANCHORS:
+- **Glossary:** [相克](https://www.jigokuraku.com/glossary/) / [相生](https://www.jigokuraku.com/glossary/) *sōkoku* / *sōshō*; **五行** *gogyo*; **氣** attributes.
+- **Where in the story:** **Tensen** battles and **Tao** interactions—**harvest / drain** theme; name **one** character moment where **相克** matters tactically (generic wording if needed).
+- **Dive:** Doc’s **“draining cycle”** ↔ manga’s **absorbing Tao**—explicit compare/contrast **one paragraph**.
+
+---
+SERIES CONTINUITY — DO NOT REPEAT EARLIER EPISODES:
+- Do **not** retell the biography of **秦始皇 (Qin Shi Huang)** or the **two 徐福 (Xu Fu) expeditions** (Sima Qian, fleets, youths sent east, sea monsters, Langya)—**Episode 02** already covered that; **Episode 01** only teased it in one line each.
+- **Maximum** for any of the above: **one short sentence** of recap or “as we established…” then proceed **only** with this episode’s topic.
+- If the source text still contains long Xu Fu paragraphs, **do not narrate them**; treat them as reference the audience already watched.
+- Open **in medias res** with this episode’s first required bullet, not a general “In ancient China…” history lesson unless this episode is **01**, **02**, or **05** (tomb/poison context only).
 ```
 
 ---
@@ -322,6 +440,19 @@ Structure:
 Optional one-liner (no deep dive): the official glossary rite **辟餌服生の斎** (five-element qi for 徐福)—full **optional echo** of **服餌辟穀** is **Appendix E** in the parent doc; Episode **16** summarizes it.
 
 Tone: fan-friendly but accurate; label Japanese katakana “Tao” vs Chinese 道 on screen once. No sexual detail beyond naming fangzhongshu as “bedchamber arts” in historical context.
+
+---
+MANGA / ANIME ANCHORS:
+- **Glossary sweep:** [氣](https://www.jigokuraku.com/glossary/), [丹](https://www.jigokuraku.com/glossary/), [丹田](https://www.jigokuraku.com/glossary/), **内丹法 / 外丹法**, **周天**, **守一**, **胎息**, **導引**, **房中術** as listed—match each to **Tensen** who **specializes** (parent doc **§6** table).
+- **Where in the story:** **Kotaku** as **geomantic** “engine”; **風水**-flavored **site** logic—tie to **island** layout (three rings) **without** replaying **Episode 03**’s full table.
+- **Dive:** **辟餌服生の斎** (glossary)—**one line** + pointer to **Appendix E** / **Episode 16** for the **服餌辟穀** hypothesis.
+
+---
+SERIES CONTINUITY — DO NOT REPEAT EARLIER EPISODES:
+- Do **not** retell the biography of **秦始皇 (Qin Shi Huang)** or the **two 徐福 (Xu Fu) expeditions** (Sima Qian, fleets, youths sent east, sea monsters, Langya)—**Episode 02** already covered that; **Episode 01** only teased it in one line each.
+- **Maximum** for any of the above: **one short sentence** of recap or “as we established…” then proceed **only** with this episode’s topic.
+- If the source text still contains long Xu Fu paragraphs, **do not narrate them**; treat them as reference the audience already watched.
+- Open **in medias res** with this episode’s first required bullet, not a general “In ancient China…” history lesson unless this episode is **01**, **02**, or **05** (tomb/poison context only).
 ```
 
 ---
@@ -344,6 +475,20 @@ Part B — Honorifics: walk the table (romanization + Traditional gloss column):
 Part C — Five training methods (daoyin, taixi, shouyi, zhoutian, fangzhongshu)—each one sentence: what the body/mind is doing.
 
 Visuals: botanical plates, hanzi calligraphy, simple human silhouette for breath paths (abstract). Spoiler level: medium—assume audience has seen character designs.
+
+---
+MANGA / ANIME ANCHORS:
+- **Per-Tensen:** For each **flower name**, cite **romanization + 繁體** as in parent doc / **Viz** notes; pair with **honorific title** (e.g. **Fugen Jōtei**, **Nyoi Genkun**) and **one** **manga** personality beat.
+- **Glossary:** [天仙](https://www.jigokuraku.com/glossary/) ranks **道士 → 地仙 → 上仙 → 神仙 → 天仙**—read aloud as **official** ladder.
+- **Where in the story:** **Training** montages and **disciple** scenes—map **導引 / 胎息 / 守一 / 周天 / 房中** to **which** Tensen **studies** which (doc table).
+- **Dive:** **Spoiler-aware:** **Kishikai** namedrop allowed as **preview** of **Episode 13**—**one line** only if keeping **Episode 12** focused on **titles + flowers**.
+
+---
+SERIES CONTINUITY — DO NOT REPEAT EARLIER EPISODES:
+- Do **not** retell the biography of **秦始皇 (Qin Shi Huang)** or the **two 徐福 (Xu Fu) expeditions** (Sima Qian, fleets, youths sent east, sea monsters, Langya)—**Episode 02** already covered that; **Episode 01** only teased it in one line each.
+- **Maximum** for any of the above: **one short sentence** of recap or “as we established…” then proceed **only** with this episode’s topic.
+- If the source text still contains long Xu Fu paragraphs, **do not narrate them**; treat them as reference the audience already watched.
+- Open **in medias res** with this episode’s first required bullet, not a general “In ancient China…” history lesson unless this episode is **01**, **02**, or **05** (tomb/poison context only).
 ```
 
 ---
@@ -365,6 +510,20 @@ Cover:
 - Historical parallels: daoyin charts (Mawangdui), taixi in *Baopuzi*, shouyi in *Taiping* / commentary traditions, zhoutian as later inner-alchemy choreography, fangzhongshu tomb texts + Han bibliographic category.
 
 End with explicit disclaimer: the manga bundles real lineages into a modern “cultivation checklist.” Visuals: Wellcome-style exercise chart feel (non-copy), generic bamboo slips.
+
+---
+MANGA / ANIME ANCHORS:
+- **Term:** [鬼尸解](https://www.jigokuraku.com/glossary/) *Kishikai* vs classical **尸解**—show **transformation** context (Tensen **battle form**).
+- **Where in the story:** Major fights where **Kishikai** triggers—**describe** visual (horror upgrade) **without** full fight choreography.
+- **Dive:** Etymology pun **鬼 + 尸解**—**one** **manga** line of dialogue or **narration** style if known from anime adaptation; else stay analytic.
+- **Safety:** Reiterate **fiction** term ≠ **Daoist manual** heading (parent doc **Appendix A**).
+
+---
+SERIES CONTINUITY — DO NOT REPEAT EARLIER EPISODES:
+- Do **not** retell the biography of **秦始皇 (Qin Shi Huang)** or the **two 徐福 (Xu Fu) expeditions** (Sima Qian, fleets, youths sent east, sea monsters, Langya)—**Episode 02** already covered that; **Episode 01** only teased it in one line each.
+- **Maximum** for any of the above: **one short sentence** of recap or “as we established…” then proceed **only** with this episode’s topic.
+- If the source text still contains long Xu Fu paragraphs, **do not narrate them**; treat them as reference the audience already watched.
+- Open **in medias res** with this episode’s first required bullet, not a general “In ancient China…” history lesson unless this episode is **01**, **02**, or **05** (tomb/poison context only).
 ```
 
 ---
@@ -384,6 +543,19 @@ Walk through simplified ritual stages (transmission, purification, sealed chambe
 Then parallel each to *Hell’s Paradise*: Tan as victim-compounded elixir; island as dānshì; discipline vs extraction; draining cycles; hubris theme.
 
 Visuals: furnace cross-section, generic seal/talisman geometry, island overlay as diagram. Tone: dark but educational—focus on historical human cost of real elixirs too (mercury).
+
+---
+MANGA / ANIME ANCHORS:
+- **Cross-ref:** **§3a** **符** + **§7** ritual chamber—**Rentan** / palace labs where **Tan** is processed; [外丹花](https://www.jigokuraku.com/glossary/), **丹** pipeline.
+- **Where in the story:** **Elixir retrieval** arc beats—**parallel** historical **Taiqing** steps to **in-story** “stages” (purification → extraction) **without** narrating whole arc.
+- **Dive:** **Nine elixirs** lore (doc **§7**) vs **Tensen** “refinement” **one** explicit contrast sentence.
+
+---
+SERIES CONTINUITY — DO NOT REPEAT EARLIER EPISODES:
+- Do **not** retell the biography of **秦始皇 (Qin Shi Huang)** or the **two 徐福 (Xu Fu) expeditions** (Sima Qian, fleets, youths sent east, sea monsters, Langya)—**Episode 02** already covered that; **Episode 01** only teased it in one line each.
+- **Maximum** for any of the above: **one short sentence** of recap or “as we established…” then proceed **only** with this episode’s topic.
+- If the source text still contains long Xu Fu paragraphs, **do not narrate them**; treat them as reference the audience already watched.
+- Open **in medias res** with this episode’s first required bullet, not a general “In ancient China…” history lesson unless this episode is **01**, **02**, or **05** (tomb/poison context only).
 ```
 
 ---
@@ -409,6 +581,19 @@ Sections:
 
 Visuals: meridian schematic (generic educational), star wheel, calm voice. Avoid medical claims; say “traditional frameworks describe…”
 Optional one-line hook: tanden damage/regrowth can justify long in-story time skips (Banko / epilogue)—only if you want spoilers.
+
+---
+MANGA / ANIME ANCHORS:
+- **Glossary:** [丹田](https://www.jigokuraku.com/glossary/) *tanden* as **weak point**; **周天**, **内丹法**; tie **胚珠** / Kishikai **tanden** shift if spoilers allowed.
+- **Where in the story:** **Sagiri** **Tao restoration** touching **Gabimaru**—**one** **non-explicit** sentence on **complementary Tao**; **training** spars on **Hōrai**.
+- **Dive:** **Neidan** metaphors in **shōnen** body vocabulary—map **three treasures** to **氣** drain/regen in combat **one** example.
+
+---
+SERIES CONTINUITY — DO NOT REPEAT EARLIER EPISODES:
+- Do **not** retell the biography of **秦始皇 (Qin Shi Huang)** or the **two 徐福 (Xu Fu) expeditions** (Sima Qian, fleets, youths sent east, sea monsters, Langya)—**Episode 02** already covered that; **Episode 01** only teased it in one line each.
+- **Maximum** for any of the above: **one short sentence** of recap or “as we established…” then proceed **only** with this episode’s topic.
+- If the source text still contains long Xu Fu paragraphs, **do not narrate them**; treat them as reference the audience already watched.
+- Open **in medias res** with this episode’s first required bullet, not a general “In ancient China…” history lesson unless this episode is **01**, **02**, or **05** (tomb/poison context only).
 ```
 
 ---
@@ -436,6 +621,20 @@ Include:
 - “Where to read next”: *Records of the Grand Historian* (Watson), *Dao De Jing*, *Book of Changes* + Ten Wings, *Baopuzi*, Needham as dense orientation.
 
 Tone: reflective. Visuals: slower pacing, quote cards with proper nouns + characters. Invite viewers to read the full written doc for glossary + EN/繁/JP cross-reference.
+
+---
+MANGA / ANIME ANCHORS:
+- **Appendices → panels:** **A** *Kishikai* fights; **B** Tensen vs **八仙** fan comparisons; **C** **Banko** / **盤古** scale; **D** epilogue **雙龍過江** title cards + **Hong Kong**; **E** **辟餌服生の斎** (glossary) + **服餌辟穀** doc hypothesis—**one manga beat each** where possible.
+- **Spoilers:** Full **late-arc** and **epilogue** allowed—label **“major spoilers.”**
+- **Dive:** For **Appendix D**, compare **English** “THE WAY OF THE TWINS” vs **雙龍之道** as **published** title cards (Viz / JP).
+- **Reading list:** Keep Watson / Needham—**add** “re-read **glossary** entries” as homework.
+
+---
+SERIES CONTINUITY — DO NOT REPEAT EARLIER EPISODES:
+- Do **not** retell the biography of **秦始皇 (Qin Shi Huang)** or the **two 徐福 (Xu Fu) expeditions** (Sima Qian, fleets, youths sent east, sea monsters, Langya)—**Episode 02** already covered that; **Episode 01** only teased it in one line each.
+- **Maximum** for any of the above: **one short sentence** of recap or “as we established…” then proceed **only** with this episode’s topic.
+- If the source text still contains long Xu Fu paragraphs, **do not narrate them**; treat them as reference the audience already watched.
+- Open **in medias res** with this episode’s first required bullet, not a general “In ancient China…” history lesson unless this episode is **01**, **02**, or **05** (tomb/poison context only).
 ```
 
 ---
@@ -452,6 +651,20 @@ Tone: reflective. Visuals: slower pacing, quote cards with proper nouns + charac
 Generate a fast-paced “term of the day” montage (30–45s per term) from a glossary: each beat shows English term, Traditional Chinese characters, Cantonese Jyutping, Japanese where listed, one-line definition, and which main-essay section it belongs to.
 
 No storytelling—just crisp definitions. Voice: neutral narrator. On-screen text must stay readable; pause between terms.
+
+---
+MANGA / ANIME ANCHORS:
+- **Source:** Parent doc **Glossary** + **Cross-reference index** table—each flashcard: **English / 繁體 / JP** as listed; add **“manga fandom term”** column when the row has **Kotaku**, **Tensen**, **Banko**, etc.
+- **Glossary:** Prefer [official glossary](https://www.jigokuraku.com/glossary/) **Japanese** headwords for **series-coined** terms.
+- **Where in the story:** For **story-specific** rows, **one** **usage** note (e.g. **こたく**, **タオ**, **鬼尸解**)—**no** Xu Fu essay.
+- **Pace:** **30–45 s** per term—**zero** Sima Qian backstory unless the term **is** Xu Fu / Qin.
+
+---
+SERIES CONTINUITY — DO NOT REPEAT EARLIER EPISODES:
+- Do **not** retell the biography of **秦始皇 (Qin Shi Huang)** or the **two 徐福 (Xu Fu) expeditions** (Sima Qian, fleets, youths sent east, sea monsters, Langya)—**Episode 02** already covered that; **Episode 01** only teased it in one line each.
+- **Maximum** for any of the above: **one short sentence** of recap or “as we established…” then proceed **only** with this episode’s topic.
+- If the source text still contains long Xu Fu paragraphs, **do not narrate them**; treat them as reference the audience already watched.
+- Open **in medias res** with this episode’s first required bullet, not a general “In ancient China…” history lesson unless this episode is **01**, **02**, or **05** (tomb/poison context only).
 ```
 
 ---
@@ -462,3 +675,4 @@ No storytelling—just crisp definitions. Voice: neutral narrator. On-screen tex
 - To **stop Xu Fu loops**, upload excerpts that **cut `### 1.`** (voyages) for Episodes **06–16**; keep a single line: “Xu Fu / Qin expeditions: Episode 02.”
 - New major headings since older versions of this file: **`### 3a.`**, **`#### **易經**` (under §4)**, **`### Appendix D`**, **`### Appendix E`** (**辟餌服生の斎** / **服餌辟穀**), expanded intro **compile** paragraph, **Glossary cross-reference index**.
 - For strict NotebookLM isolation, consider saving **per-episode excerpts** as separate `.md` files and uploading **only one excerpt + this prompt** per generation.
+- **Episodes 01–17:** Paste the **entire** **Video prompt** fence for that episode (**main text → MANGA / ANIME ANCHORS → SERIES CONTINUITY** where listed); keep **[official glossary](https://www.jigokuraku.com/glossary/)** open when generating. For **Episode 03** only, you may **append** the standalone footer from [Continuity](#continuity-avoid-repeating-earlier-episodes) if regenerating without editing the prompt.
